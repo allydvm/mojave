@@ -1,0 +1,6 @@
+AllCops:
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  ExtraDetails: true
+
+LineLength: { Max: 89 }

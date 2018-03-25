@@ -1,5 +1,5 @@
-require "mojave/version"
+require 'mojave/version'
 
+# module comment
 module Mojave
-  # Your code goes here...
 end

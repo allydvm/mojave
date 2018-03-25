@@ -1,11 +1,7 @@
-require "test_helper"
+require 'test_helper'
 
-class MojaveTest < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::Mojave::VERSION
-  end
-
-  def test_it_does_something_useful
-    assert false
+describe Mojave do
+  it 'must have a version number' do
+    ::Mojave::VERSION.wont_be_nil
   end
 end
