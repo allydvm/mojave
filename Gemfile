@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
-git_source(:github) { 'https://github.com/allydvm/mojave' }
+git_source(:github) { |repo_name| "https://github.com/allydvm/#{repo_name}" }
 
 gemspec
