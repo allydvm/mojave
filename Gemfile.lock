@@ -38,6 +38,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.16)
+  byebug (~> 10.0.1)
   minitest (~> 5.0)
   mojave!
   pry-byebug (~> 3.6)
