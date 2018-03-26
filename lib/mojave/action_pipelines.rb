@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Mojave
   module ActionPipelines
     include Mojava::PipelineMethods
@@ -35,31 +37,31 @@ module Mojave
     public
 
     def index
-      index_pipeline.each { |method| self.send method }
+      index_pipeline.each { |method| send method }
     end
 
     def show
-      show_pipeline.each { |method| self.send method }
+      show_pipeline.each { |method| send method }
     end
 
     def new
-      new_pipeline.each { |method| self.send method }
+      new_pipeline.each { |method| send method }
     end
 
     def edit
-      edit_pipeline.each { |method| self.send method }
+      edit_pipeline.each { |method| send method }
     end
 
     def create
-      create_pipeline.each { |method| self.send method }
+      create_pipeline.each { |method| send method }
     end
 
     def update
-      update_pipeline.each { |method| self.send method }
+      update_pipeline.each { |method| send method }
     end
 
     def destroy
-      destroy_pipeline.each { |method| self.send method }
+      destroy_pipeline.each { |method| send method }
     end
   end
 end
