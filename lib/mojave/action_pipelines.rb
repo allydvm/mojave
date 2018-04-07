@@ -37,31 +37,37 @@ module Mojave
     public
 
     def index
-      index_pipeline.each { |method| send method }
+      execute_pipeline(index_pipeline)
     end
 
     def show
-      show_pipeline.each { |method| send method }
+      execute_pipeline(show_pipeline)
     end
 
     def new
-      new_pipeline.each { |method| send method }
+      execute_pipeline(new_pipeline)
     end
 
     def edit
-      edit_pipeline.each { |method| send method }
+      execute_pipeline(edit_pipeline)
     end
 
     def create
-      create_pipeline.each { |method| send method }
+      execute_pipeline(create_pipeline)
     end
 
     def update
-      update_pipeline.each { |method| send method }
+      execute_pipeline(update_pipeline)
     end
 
     def destroy
-      destroy_pipeline.each { |method| send method }
+      execute_pipeline(destroy_pipeline)
     end
+  end
+
+  private
+
+  def execute_pipeline(pipeline)
+    pipeline.each_with_object({}) { |method, pipe| send method, pipe }
   end
 end
