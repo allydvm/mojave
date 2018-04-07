@@ -2,7 +2,7 @@
 
 module Mojave
   module ActionPipelines
-    include Mojava::PipelineMethods
+    include Mojave::PipelineMethods
 
     protected
 

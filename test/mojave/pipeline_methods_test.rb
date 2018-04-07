@@ -15,8 +15,10 @@ module Mojave
       @controller = KelsoDunesController.new
     end
 
-    it 'must return the class for a controller' do
-      @controller.resource_class.must_equal KelsoDune
+    describe '#resource_class' do
+      it 'must return the class for a controller' do
+        @controller.resource_class.must_equal KelsoDune
+      end
     end
   end
 end
