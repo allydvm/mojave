@@ -22,6 +22,11 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
+  spec.required_ruby_version = '>= 2.3'
+
+  spec.add_dependency('actionpack', '>= 4.2', '<= 5.2')
+  spec.add_dependency('railties', '>= 4.2', '<= 5.2')
+
   spec.add_development_dependency 'bundler', '~> 1.16'
   spec.add_development_dependency 'byebug', '~> 10.0.1'
   spec.add_development_dependency 'minitest', '~> 5.11'
