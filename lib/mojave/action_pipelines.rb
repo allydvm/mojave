@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
+require 'mojave/pipeline_methods'
+
+# Mojave
 module Mojave
+  # ActionPipelines
   module ActionPipelines
     include Mojave::PipelineMethods
 
