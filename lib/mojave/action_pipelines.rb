@@ -11,31 +11,31 @@ module Mojave
     protected
 
     def index_pipeline
-      []
+      %i[set_class load_parent set_resource_collection]
     end
 
     def show_pipeline
-      []
+      %i[set_class loat_parent set_resource_instance]
     end
 
     def new_pipeline
-      []
+      %i[set_class load_parent initialize_resource]
     end
 
     def edit_pipeline
-      []
+      %i[set_class load_parent set_resource_instance]
     end
 
     def create_pipeline
-      []
+      %i[set_class load_parent initialize_resource]
     end
 
     def update_pipeline
-      []
+      %i[set_class load_parent set_resource_instance]
     end
 
     def destroy_pipeline
-      []
+      %i[set_class load_parent set_resource_instance]
     end
 
     public
